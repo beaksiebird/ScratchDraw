@@ -13,6 +13,7 @@
 		CDC9B50E1B04D700008BC47F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC9B50D1B04D700008BC47F /* Images.xcassets */; };
 		CDC9B5111B04D700008BC47F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC9B50F1B04D700008BC47F /* LaunchScreen.xib */; };
 		CDC9B51D1B04D701008BC47F /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9B51C1B04D701008BC47F /* ScratchDrawTests.swift */; };
+		CDC9B5271B04D9FD008BC47F /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9B5261B04D9FD008BC47F /* ScratchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CDC9B5161B04D701008BC47F /* ScratchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9B51B1B04D701008BC47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC9B51C1B04D701008BC47F /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
+		CDC9B5261B04D9FD008BC47F /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScratchView.swift; path = ../../ScratchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		CDC9B5031B04D700008BC47F /* ScratchDraw */ = {
 			isa = PBXGroup;
 			children = (
-				CDC9B5061B04D700008BC47F /* AppDelegate.swift */,
-				CDC9B5081B04D700008BC47F /* ViewController.swift */,
 				CDC9B50A1B04D700008BC47F /* Main.storyboard */,
-				CDC9B50D1B04D700008BC47F /* Images.xcassets */,
-				CDC9B50F1B04D700008BC47F /* LaunchScreen.xib */,
+				CDC9B5081B04D700008BC47F /* ViewController.swift */,
+				CDC9B5261B04D9FD008BC47F /* ScratchView.swift */,
 				CDC9B5041B04D700008BC47F /* Supporting Files */,
 			);
 			path = ScratchDraw;
@@ -90,6 +90,9 @@
 		CDC9B5041B04D700008BC47F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDC9B5061B04D700008BC47F /* AppDelegate.swift */,
+				CDC9B50D1B04D700008BC47F /* Images.xcassets */,
+				CDC9B50F1B04D700008BC47F /* LaunchScreen.xib */,
 				CDC9B5051B04D700008BC47F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -214,6 +217,7 @@
 			files = (
 				CDC9B5091B04D700008BC47F /* ViewController.swift in Sources */,
 				CDC9B5071B04D700008BC47F /* AppDelegate.swift in Sources */,
+				CDC9B5271B04D9FD008BC47F /* ScratchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
