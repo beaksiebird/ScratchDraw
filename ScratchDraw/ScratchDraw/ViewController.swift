@@ -11,19 +11,31 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    
-    @IBAction func clearLines(sender: AnyObject) {
+    @IBAction func changeSize(sender: UISlider) {
         
-        scratchPad.scratches = []
+        let width = sender.value
+        
+        scratchPad.lineSize = Double(width)
         scratchPad.setNeedsDisplay()
         
+
         
     }
     
     
-    @IBOutlet weak var scratchPad : ScratchView!
+    @IBAction func clearLines(sender: AnyObject) {
+        
+        scratchPad.scratches = []
+        
+        scratchPad.setNeedsDisplay()
+        
+        
+    }
+
+    @IBOutlet weak var scratchPad: ScratchView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
        // view.addSubview(scratchPad)
@@ -34,24 +46,19 @@ class ViewController: UIViewController {
         
     }
     
-    
     var currentColor = UIColor.blackColor()
     
     @IBAction func changeColor(sender: UIButton) {
         
+        
+        
         if let color = sender.backgroundColor {
             
             scratchPad.currentColor = color
-        
-        
+            
         }
         
-        
-        
     }
-    
-    
-    
 
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         
@@ -59,32 +66,25 @@ class ViewController: UIViewController {
             
             let location = touch.locationInView(scratchPad)
         
-            scratchPad.newScratchWithStartPoint(location)
+            scratchPad.newScratchWithStartPoint(location) 
             
             
         }
         
-        
-        
     }
-    
     
     override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         
         if let touch = touches.first as? UITouch {
             
             let location = touch.locationInView(scratchPad)
+            
             //scratchPad.updateCurrentLineWithLastPoint(location)
+            
             scratchPad.addPointToCurrentScratch(location)
-            
-            
-            
+        
         }
     
     }
-    
+
 }
-
-
-
-

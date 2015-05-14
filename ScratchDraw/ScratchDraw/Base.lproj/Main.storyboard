@@ -56,11 +56,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hu-ld-OMv">
                                         <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp9-5p-l0d">
-                                                <rect key="frame" x="8" y="8" width="59" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp9-5p-l0d">
+                                                <rect key="frame" x="8" y="19" width="61" height="40"/>
                                                 <color key="backgroundColor" red="0.99215686270000003" green="0.056383634868421052" blue="0.59585731907894735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="x17-6F-ZwK"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -68,11 +71,14 @@
                                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1J-4g-V63"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erm-Ux-Oew">
-                                                <rect key="frame" x="97" y="8" width="63" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erm-Ux-Oew">
+                                                <rect key="frame" x="77" y="20" width="61" height="40"/>
                                                 <color key="backgroundColor" red="0.28664679276315785" green="0.71304481909999995" blue="0.93796258223684215" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="n8e-TL-xf6"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -80,11 +86,14 @@
                                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogu-0L-OpM"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbh-Ps-sv0">
-                                                <rect key="frame" x="198" y="8" width="62" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbh-Ps-sv0">
+                                                <rect key="frame" x="153" y="20" width="61" height="40"/>
                                                 <color key="backgroundColor" red="0.1764705882" green="0.82745098039999998" blue="0.43117804276315785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="XqY-69-Zko"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -92,10 +101,105 @@
                                                     <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NyU-aS-yOf"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxs-ya-5Qn">
+                                                <rect key="frame" x="231" y="20" width="61" height="40"/>
+                                                <color key="backgroundColor" red="0.99825704780000002" green="1" blue="0.30144151660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MY7-pW-cCL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-hv-etV">
+                                                <rect key="frame" x="387" y="21" width="61" height="39"/>
+                                                <color key="backgroundColor" red="0.99236505679999998" green="0.44840906790000001" blue="0.13270157390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="JIT-9o-9yK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We6-3y-Puz">
+                                                <rect key="frame" x="531" y="20" width="61" height="39"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="WOs-b1-TdX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                <state key="normal" title="UNDO">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xP6-zW-ADO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HS-hh-RkV">
+                                                <rect key="frame" x="307" y="20" width="61" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="bpw-Ch-4yf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAt-fO-CWA">
+                                                <rect key="frame" x="462" y="19" width="61" height="39"/>
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.20000000000000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="0BO-Zj-cIb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="erm-Ux-Oew" secondAttribute="width" id="0TR-72-d47"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sbh-Ps-sv0" secondAttribute="bottom" constant="20" id="40i-6D-hNe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yp9-5p-l0d" secondAttribute="bottom" constant="21" id="5eS-bF-4Zr"/>
+                                            <constraint firstItem="Yp9-5p-l0d" firstAttribute="leading" secondItem="7hu-ld-OMv" secondAttribute="leading" constant="8" id="8yf-63-DiN"/>
+                                            <constraint firstAttribute="bottom" secondItem="We6-3y-Puz" secondAttribute="bottom" constant="21" id="9ax-Lj-dkw"/>
+                                            <constraint firstItem="a1O-hv-etV" firstAttribute="leading" secondItem="5HS-hh-RkV" secondAttribute="trailing" constant="19" id="9lx-Jg-33r"/>
                                             <constraint firstAttribute="height" constant="80" id="ARF-1r-x6s"/>
+                                            <constraint firstAttribute="bottom" secondItem="erm-Ux-Oew" secondAttribute="bottom" constant="20" id="BrL-5X-D3l"/>
+                                            <constraint firstItem="Yp9-5p-l0d" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="19" id="E7A-iH-noN"/>
+                                            <constraint firstItem="Rxs-ya-5Qn" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="FwD-42-2JF"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="5HS-hh-RkV" secondAttribute="width" id="Grm-an-Ayq"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rxs-ya-5Qn" secondAttribute="bottom" constant="20" id="IQn-vk-vCe"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="a1O-hv-etV" secondAttribute="width" id="Iso-Yl-bh4"/>
+                                            <constraint firstAttribute="trailing" secondItem="We6-3y-Puz" secondAttribute="trailing" constant="8" id="PJn-Py-tYF"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="Yp9-5p-l0d" secondAttribute="width" id="PPF-3M-8dM"/>
+                                            <constraint firstItem="5HS-hh-RkV" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="PXX-cS-pRo"/>
+                                            <constraint firstItem="QAt-fO-CWA" firstAttribute="leading" secondItem="a1O-hv-etV" secondAttribute="trailing" constant="14" id="THS-Z1-7uN"/>
+                                            <constraint firstItem="Sbh-Ps-sv0" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="VzF-ix-FhZ"/>
+                                            <constraint firstItem="Sbh-Ps-sv0" firstAttribute="leading" secondItem="erm-Ux-Oew" secondAttribute="trailing" constant="15" id="ZgT-gk-Zya"/>
+                                            <constraint firstItem="erm-Ux-Oew" firstAttribute="leading" secondItem="Yp9-5p-l0d" secondAttribute="trailing" constant="8" id="aHt-n6-uNs"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="leading" secondItem="QAt-fO-CWA" secondAttribute="trailing" constant="8" id="eqD-dy-1oC"/>
+                                            <constraint firstAttribute="bottom" secondItem="a1O-hv-etV" secondAttribute="bottom" constant="20" id="f5j-nU-KU1"/>
+                                            <constraint firstItem="5HS-hh-RkV" firstAttribute="leading" secondItem="Rxs-ya-5Qn" secondAttribute="trailing" constant="15" id="fLl-3H-cFu"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="QAt-fO-CWA" secondAttribute="width" id="fP4-Ph-W3J"/>
+                                            <constraint firstItem="a1O-hv-etV" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="21" id="fh7-wc-O4g"/>
+                                            <constraint firstAttribute="bottom" secondItem="QAt-fO-CWA" secondAttribute="bottom" constant="21" id="mzF-Nb-4OW"/>
+                                            <constraint firstItem="Rxs-ya-5Qn" firstAttribute="leading" secondItem="Sbh-Ps-sv0" secondAttribute="trailing" constant="17" id="nn3-jP-Qhd"/>
+                                            <constraint firstItem="erm-Ux-Oew" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="rsX-IG-WQ6"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="Sbh-Ps-sv0" secondAttribute="width" id="s1X-Gm-4pK"/>
+                                            <constraint firstAttribute="bottom" secondItem="5HS-hh-RkV" secondAttribute="bottom" constant="20" id="ttk-qq-fku"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="width" secondItem="Rxs-ya-5Qn" secondAttribute="width" id="ujy-nO-uPp"/>
+                                            <constraint firstItem="We6-3y-Puz" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="xPh-sF-kgJ"/>
+                                            <constraint firstItem="QAt-fO-CWA" firstAttribute="top" secondItem="7hu-ld-OMv" secondAttribute="top" constant="20" id="zse-5X-GaK"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-Wd-1Vb">
@@ -112,6 +216,12 @@
                                             <action selector="clearLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egh-mW-i6g"/>
                                         </connections>
                                     </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWA-t2-uEF">
+                                        <rect key="frame" x="6" y="473" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="changeSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="yI7-2g-zOP"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
