@@ -37,7 +37,7 @@
 		CDC9B5161B04D701008BC47F /* ScratchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9B51B1B04D701008BC47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC9B51C1B04D701008BC47F /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
-		CDC9B5261B04D9FD008BC47F /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScratchView.swift; path = ../../ScratchView.swift; sourceTree = "<group>"; };
+		CDC9B5261B04D9FD008BC47F /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +415,7 @@
 				CDC9B5221B04D701008BC47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC9B5231B04D701008BC47F /* Build configuration list for PBXNativeTarget "ScratchDrawTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				CDC9B5251B04D701008BC47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
