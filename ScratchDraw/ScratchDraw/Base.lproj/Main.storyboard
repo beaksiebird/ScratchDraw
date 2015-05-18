@@ -17,110 +17,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJW-br-ahT">
-                                <rect key="frame" x="0.0" y="520" width="584" height="80"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqH-ia-7R8">
-                                        <rect key="frame" x="0.0" y="-520" width="52" height="34"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Clear">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clearLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4j8-oK-0Ah"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-OT-CPT" customClass="ScratchView" customModule="ScratchDraw" customModuleProvider="target">
-                                        <rect key="frame" x="-1" y="8" width="577" height="64"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nah-9Q-wCI">
-                                                <rect key="frame" x="59" y="-95" width="86" height="84"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="LZH-OT-CPT" secondAttribute="bottom" id="ALd-mr-6ag"/>
-                                    <constraint firstItem="LZH-OT-CPT" firstAttribute="leading" secondItem="WJW-br-ahT" secondAttribute="leadingMargin" constant="-9" id="AxF-SE-FGV"/>
-                                    <constraint firstItem="LZH-OT-CPT" firstAttribute="top" secondItem="WJW-br-ahT" secondAttribute="topMargin" id="JXA-hy-hK5"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="LZH-OT-CPT" secondAttribute="trailing" id="RRL-lw-72B"/>
-                                    <constraint firstAttribute="height" constant="80" id="xhM-As-AsP"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Vm-dp4" customClass="ScratchView" customModule="ScratchDraw" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzV-sG-FOI">
+                                        <rect key="frame" x="264" y="214" width="72" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="ksE-Ry-OPM"/>
+                                            <constraint firstAttribute="height" constant="68" id="oI5-pD-QHU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="🐣">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showHide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ay-Sq-oqp"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hu-ld-OMv">
-                                        <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp9-5p-l0d">
-                                                <rect key="frame" x="8" y="8" width="59" height="40"/>
-                                                <color key="backgroundColor" red="0.99215686270000003" green="0.056383634868421052" blue="0.59585731907894735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wX3-WJ-o7p">
+                                                <rect key="frame" x="0.0" y="220" width="600" height="80"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dUT-hj-7OU">
+                                                    <size key="itemSize" width="60" height="60"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorCell" id="YwI-JM-M8b" customClass="ColorCell" customModule="ScratchDraw" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-Wd-1Vb">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <state key="normal" title="Clear">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1J-4g-V63"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erm-Ux-Oew">
-                                                <rect key="frame" x="97" y="8" width="63" height="40"/>
-                                                <color key="backgroundColor" red="0.28664679276315785" green="0.71304481909999995" blue="0.93796258223684215" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogu-0L-OpM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbh-Ps-sv0">
-                                                <rect key="frame" x="198" y="8" width="62" height="40"/>
-                                                <color key="backgroundColor" red="0.1764705882" green="0.82745098039999998" blue="0.43117804276315785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                                <state key="normal" title="Button">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NyU-aS-yOf"/>
+                                                    <action selector="clearLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egh-mW-i6g"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="ARF-1r-x6s"/>
+                                            <constraint firstAttribute="height" constant="300" id="ARF-1r-x6s"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-Wd-1Vb">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="VlA-wU-AKI"/>
-                                            <constraint firstAttribute="width" constant="160" id="hh4-MI-LmB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Clear">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clearLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egh-mW-i6g"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="3zR-Wd-1Vb" firstAttribute="top" secondItem="i6x-Vm-dp4" secondAttribute="top" id="73V-5m-4KQ"/>
-                                    <constraint firstItem="7hu-ld-OMv" firstAttribute="leading" secondItem="i6x-Vm-dp4" secondAttribute="leading" id="Q4X-Ky-cel"/>
-                                    <constraint firstAttribute="bottom" secondItem="7hu-ld-OMv" secondAttribute="bottom" id="ShW-08-3XI"/>
-                                    <constraint firstItem="3zR-Wd-1Vb" firstAttribute="leading" secondItem="i6x-Vm-dp4" secondAttribute="leading" id="Z1T-bM-CKj"/>
-                                    <constraint firstAttribute="trailing" secondItem="7hu-ld-OMv" secondAttribute="trailing" id="hw2-HB-vzl"/>
+                                    <constraint firstAttribute="bottom" secondItem="7hu-ld-OMv" secondAttribute="bottom" id="6PM-KP-Cch"/>
+                                    <constraint firstItem="7hu-ld-OMv" firstAttribute="leading" secondItem="i6x-Vm-dp4" secondAttribute="leading" id="DXX-fm-zuG"/>
+                                    <constraint firstAttribute="centerX" secondItem="GzV-sG-FOI" secondAttribute="centerX" id="Hra-wQ-hSv"/>
+                                    <constraint firstItem="7hu-ld-OMv" firstAttribute="top" secondItem="GzV-sG-FOI" secondAttribute="bottom" constant="18" id="RTp-6d-mEV"/>
+                                    <constraint firstAttribute="trailing" secondItem="7hu-ld-OMv" secondAttribute="trailing" id="Ub5-iS-XwR"/>
+                                    <constraint firstAttribute="centerX" secondItem="GzV-sG-FOI" secondAttribute="centerX" id="cOX-ah-e7r"/>
+                                    <constraint firstAttribute="bottom" secondItem="GzV-sG-FOI" secondAttribute="bottom" constant="1" id="lkY-5a-bgo"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hra-wQ-hSv"/>
+                                        <exclude reference="lkY-5a-bgo"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -129,11 +98,8 @@
                             <constraint firstItem="i6x-Vm-dp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="FCW-Bs-78B"/>
                             <constraint firstItem="i6x-Vm-dp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NZk-70-VrI"/>
                             <constraint firstAttribute="trailing" secondItem="i6x-Vm-dp4" secondAttribute="trailing" id="TU0-El-i35"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WJW-br-ahT" secondAttribute="bottom" id="bcV-kN-5BG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="i6x-Vm-dp4" secondAttribute="trailing" id="hA6-cl-t8L"/>
-                            <constraint firstItem="WJW-br-ahT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hPK-Gf-xbN"/>
                             <constraint firstItem="i6x-Vm-dp4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pks-EI-kDh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WJW-br-ahT" secondAttribute="trailing" id="rwU-Sd-OIS"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -143,7 +109,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="fillColor" destination="wX3-WJ-o7p" id="qUn-8G-e80"/>
                         <outlet property="scratchPad" destination="i6x-Vm-dp4" id="Vsw-CC-QYK"/>
+                        <outlet property="viewBottomConstraint" destination="6PM-KP-Cch" id="4vU-2t-wnc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
